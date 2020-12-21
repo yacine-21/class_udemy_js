@@ -1,11 +1,24 @@
 let btn = document.getElementById("button") // Recupere l'id du button et on le stock dans une variable
+let bouton = document.getElementById("test2"); // Recupere l'id du button2 et on le stock dans une variable
+let answer1 = document.getElementById("test"); // Recupere l'id du p et on le stock dans une variable
+let answer;
+
 
 btn.addEventListener("click", buttonCliked)
 
 function buttonCliked (){
-    console.log("You clicked here")
-    document.getElementById("text").innerHTML = "Don't touch me you trash"
-}
+    console.log("You clicked here");
+    document.getElementById("text").innerHTML = "Don't touch me you trash";
+    answer1 = document.getElementById("test").innerHTML = prompt("Veuillez rentre votre réponse");
+    if (answer1 == "batman"){
+        alert("58")
+    } else{
+        alert("noooooon")
+    }
+} 
+bouton.addEventListener("click", buttonCliked)
+
+
 
 
 btn.addEventListener("mouseover",mouseover)
@@ -21,6 +34,11 @@ function keydown(){
     console.log("Hey you're typing my keyoboard")
     document.getElementById("text").innerHTML = "Hey you're typing my keyoboard"
 }
+
+
+
+
+
 
 //---------------------------- TEST SUR LES ARRAY --------------------------------------//
 
